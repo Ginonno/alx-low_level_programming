@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
- * main -print size of various types in c program
+ * main - print size of various types in c program
  *
  * Return: 0
 */
 int main(void)
 {
-
 	char a;
 	int b;
 	long int c;
@@ -20,4 +19,3 @@ int main(void)
 	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 	return (0);
 }
-	
