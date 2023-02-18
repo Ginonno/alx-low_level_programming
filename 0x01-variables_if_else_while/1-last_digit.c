@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
+/* more headers goes there */
 #include <stdio.h>
 /**
  * main -main function
  *
- * return: always 0
-*/
+ * Return: always 0
+ */
 int main(void)
 {
 	int n;
@@ -16,7 +17,7 @@ int main(void)
 	/* your code goes there */
 	m = n % 10;
 	if (m > 5)
-		printf("last digit of %d is %d and is greater tha 5", n, m);
+		printf("last digit of %d is %d and greater than 5", n, m);
 	else if (m == 0)
 		printf("last digit of %d is %d and is 0", n, m);
 	else if (m < 6 && m != 0)
