@@ -2,22 +2,25 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - annoying
+ * main - main function
  *
- * Retrun: 0 if the program runs successfully
+ * Retrun: always 0
 */
 int main(void)
 {
 	int n;
+	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if ((n % 10) > 5)
-		printf("last digit of %d and is greater than 5\n", n % 10);
-	else if ((n % 10) < 6 && (n % 10) != 0)
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
-	else
-		printf("last digit of %d and is 0\n", n % 10);
+	x = n % 10;
+	if (x > 5)
+		printf("last digit of %d is %d  and is greater than 5\n", n, x);
+	else if (x == 0)
+		printf("last digit of %d is %d and is 0\n", n, x);
+	else if (x < 6 && x != 0)
+		printf("last digit of %d is %d and is less than 6 and not 0\n" n, x);
+
 	return (0);
 }
