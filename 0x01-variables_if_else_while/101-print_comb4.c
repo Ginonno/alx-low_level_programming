@@ -10,7 +10,7 @@ int main(void)
 {
 	int a;
 	int b;
-	int c;;
+	int c;
 
 	for (a = 0 ; a < 10 ; a++)
 	{
@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (c = 2 ; c < 10 ; c++)
 			{
-				if ( a < b && b < c)
+				if (a < b && b < c)
 				{
 					putchar(a + '0');
 					putchar(b + '0');
@@ -30,4 +30,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
