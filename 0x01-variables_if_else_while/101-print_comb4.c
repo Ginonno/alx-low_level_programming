@@ -23,8 +23,10 @@ int main(void)
 					putchar(a + '0');
 					putchar(b + '0');
 					putchar(c + '0');
-					putchar(',');
-					putchar(' ');
+					if (a + b + C != 24)
+					{
+						putchar(',');
+						putchar(' ');
 				}
 			}
 		}
