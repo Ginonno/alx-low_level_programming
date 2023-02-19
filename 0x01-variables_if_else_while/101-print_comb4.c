@@ -11,11 +11,11 @@ int main(void)
 	int b;
 	int c;
 
-	for (a = 0 ; a < 10 ; a++)
+	for (a = 0 ; a < 7 ; a++)
 	{
-		for (b = 1 ; b < 10 ; b++)
+		for (b = 1 ; b < 8 ; b++)
 		{
-			for (c = 2 ; c < 10 ; c++)
+			for (c = 2 ; c < 9 ; c++)
 			{
 				if (a < b && b < c)
 				{
@@ -24,12 +24,14 @@ int main(void)
 					putchar(c + '0');
 					if (a + b + c != 24)
 					{
+						continue;
+					}
 						putchar(',');
 						putchar(' ');
 				}
 			}
 		}
-	}
+
 	putchar('\n');
 
 	return (0);
